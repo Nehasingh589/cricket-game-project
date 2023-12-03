@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRICKET GAME</h1>
+
+    <button onclick="
+    generatedComputerChoice();
+
+let resultMsg;
+if (computerChoice === 'BALL') {
+    resultMsg = 'You Won.🏆';
+} else if(computerChoice === 'BAT'){
+  resultMsg =`It's a tie.👍`;
+} else if(computerChoice === 'STUMP'){
+    resultMsg =`Computer won.🏆`;
+}
+alert(`Your choice is BAT. Computer choice is ${computerChoice} and ${resultMsg}`);
+ 
+ ">BAT</button>
+   
+   <button onclick="
+    generatedComputerChoice();
+
+if (computerChoice === 'BAT') {
+    resultMsg = 'You Won.🏆';
+} else if(computerChoice === 'BALL'){
+    resultMsg =`It's a tie.👍`;
+} else if(computerChoice === 'STUMP'){
+    resultMsg =`Computer won.🏆`;
+}
+alert(`Your choice is BALL. Computer choice is ${computerChoice} and ${resultMsg}`);
+    
+    ">BALL</button>
+
+    <button onclick="
+     generatedComputerChoice();
+
+if (computerChoice === 'BAT') {
+    resultMsg = 'Computer Won.🏆';
+} else if(computerChoice === 'STUMP'){
+    resultMsg =`It's a tie.👍`;
+} else if(computerChoice === 'BALL'){
+    resultMsg =`You won.🏆`;
+}
+alert(`Your choice is STUMP. Computer choice is ${computerChoice} and ${resultMsg}`);
+    
+    ">STUMP</button>
+    <script src="script.js"></script>
+</body>
+</html>
